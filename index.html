@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Jonathan Lu | Project 1</title>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+
+  <link rel="stylesheet" href="dist/css/jInvertScroll.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,500" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="dist/js/jquery.min.js"></script>
+  <script type="text/javascript" src="dist/js/jquery.jInvertScroll.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+  <script src="d3.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+
+
+  <!-- <div class="container"> -->
+
+  <div class="inner scroll">
+    <div class="vis" id='map' style='width: 1300px; height: 100vh;'></div>
+  </div>
+  <div class="inner scroll">
+    <img class="maplegend" src="MapLegend.png" alt="legend">
+  </div>
+
+  <div class="mid scroll">
+    <div class='container'>
+      <svg class="chart" width="900" height="500"></svg>
+      <ul class="checkbox-grid">
+        <li><input type="checkbox" class="boxes" id="ambulance" checked> Ambulance </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="bike" checked> Bicycle </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="bus" checked> Bus </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="fireTruck" checked> Fire Truck </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="lComCe" checked> Large Com. Vehicle </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="livery" checked> Livery Vehicle </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="moto" checked> Motorcycle </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="other" checked> Other </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="pasVe" checked> Passenger Vehicle </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="pedicab" checked> Pedicab </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="pickUp" checked> Pick-Up Truck </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="scooter" checked> Scooter </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="sComVe" checked> Small Com. Vehicle </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="suv" checked> SUV / Station Wagon </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="taxi" checked> Taxi </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="unkn" checked> Unknown </input>
+        </li>
+        <li><input type="checkbox" class="boxes" id="van" checked> Van </input>
+        </li>
+        <li><button id="hideall">Hide All </button>
+          <button id="showall">Show All </button>
+        </li>
+        <li id="needhelp">Need Help?</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="mid scroll" id='abt'>
+    <div class='title'>
+      <h2>Accidents by Type</h2>
+    </div>
+    <div id="label1">
+      <h4>At Fault</h4>
+    </div>
+    <div id="label2">
+      <h4>Involved</h4>
+    </div>
+  </div>
+
+  <div class="front scroll">
+    <div id="thirdvis">
+      <div id="plot"></div>
+    </div>
+  </div>
+  <div class="front scroll">
+    <div id='title2'>
+      <h2>Accidents by Time</h2>
+    </div>
+  </div>
+  <div class="front scroll">
+    <div id='scatterLegend'>
+      <img id='legimg' src="scatterLegend.png" width="100px" alt="scatterplot legend">
+    </div>
+  </div>
+</body>
+
+</html>
