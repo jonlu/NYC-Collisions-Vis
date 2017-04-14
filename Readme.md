@@ -1,4 +1,4 @@
-#Danger! A Collision Visualization
+# Danger! A Collision Visualization
 In collaboration with [Schuyler Alschuler](https://github.com/swalschuler) and Anthony Liu.
 
 ## Dataset : NYPD Motor Vehicle Collisions
@@ -15,6 +15,7 @@ To put the three visualization together, some rough sketches were done on paper.
 
 ## The Final Product Description : Map
 ![NYC Collisions Map](thumbs/map.png)
+
 The final version of the map includes all of the same marks and channels laid out in the proposal: point density indicates frequency of accidents, and the color scale displays the lethality of each accident. As such, hazardous areas are easily determined by a denser, redder area on the map. This visualization can be interacted with through zooming, panning, and drawing bounding boxes that filter the other visualizations. 
 
 ## The Development Process : Map
@@ -22,6 +23,7 @@ In the initial proposal, the idea was brought up of filtering by NY boroughs, wh
 
 ## The Final Product Description : Scatterplot
 ![NYC Collisions Scatterplot](thumbs/scatter.png)
+
 The final version of the scatterplot displays one point for each fifteen minute interval throughout the day. Each point is positioned to indicate the frequency of accidents during a particular time, and given a size and color to indicate the number of casualties. To interact with this graph, a user can hover the mouse over a point in order to display a bar chart. This bar chart represents the breakdown of casualties at the selected point in time. Also, this scatterplot is filtered by the bounding box drawn on the map - taking into account only data points which have geocoordinates within the selected region.
 
 ## The Development Process : Scatterplot
@@ -29,6 +31,7 @@ While developing the scatterplot, only one major change was made to the proposed
 
 ## The Final Product Description : Graph
 ![NYC Collisions Graph](thumbs/graph.png)
+
 The final version of the graph displays two stacked bars which show the number of accidents by vehicle type; the first bar is the vehicle which caused the accident, and the second bar is the vehicle affected by the accident. Connections between the two bars, coupled with their weights, represent the frequency of collisions between the two vehicle types. Users can utilize the provided checkboxes to select any combination of vehicle types to visualize. Importantly, the graph is filtered by the bounding box drawn on the map. Animations are used during these filtering processes so that users can track how their inputs are affecting the system
 
 ## The Development Process : Stacked Graph
